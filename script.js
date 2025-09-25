@@ -15,3 +15,9 @@ blurEl.addEventListener("click", () => {
   modalEl.classList.add("modal-hidden");
   blurEl.classList.add("blur-hidden");
 });
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
+    modalEl.classList.add("modal-hidden");
+    blurEl.classList.add("blur-hidden");
+  }
+});
