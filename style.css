@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+body {
+  font-family: sans-serif;
+}
+.gradent:hover {
+  background: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%, #0ea5ea);
+}
+.gradent:focus {
+  background: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%, #0ea5ea);
+}
+.transision {
+  transform: translate(-50%, -50%);
+}
+.blur-hidden{
+    display: none;
+}
+.modal-hidden{
+    display: none;
+}

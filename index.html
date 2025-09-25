@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>modal</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="h-screen bg-[#0f172a] text-white">
+    <main class="h-[100%] relative">
+      <div
+        id="blur"
+        class="blur-hidden fixed w-full h-full z-[5] bg-[#00000099]"
+      ></div>
+
+      <div class="flex justify-center pt-[40px]">
+        <button
+          id="button"
+          class="gradent border-2 border-[#0ea5ea] py-[17.5px] px-[35px] rounded-[50px] font-[600] text-[20px] cursor-pointer"
+        >
+          Show modal
+        </button>
+      </div>
+
+      <div
+        id="modal"
+        class="modal-hidden transision transition-all flex flex-col bg-[#131c31] absolute top-[50%] left-[50%] p-[60px] min-w-[640px] rounded-[20px] border-[1px] border-[#222f43] z-10"
+      >
+        <button
+          id="close"
+          class="absolute left-[94%] bottom-[63%] text-[40px] w-[29px] h-[57px] cursor-pointer"
+        >
+          x
+        </button>
+        <div class="flex flex-col gap-[14px]">
+          <h1 class="text-[25px] font-[500]">Modal title</h1>
+          <p class="">Woo-hoo, you're reading this text in a modal!</p>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
 </html>
